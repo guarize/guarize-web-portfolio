@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+/* 6ef3a5 */
+
 .header-wrapper {
   font-family: 'Poppins', sans-serif;
   width: 99vw;
@@ -37,7 +39,7 @@
 }
 
 .header-menu p:hover {
-  color: #6ef3a5;
+  color: #c495fd;
 }
 
 .header-menu p:hover::before {
@@ -68,7 +70,8 @@
 }
 
 .header-socials a:hover {
-  color: #6ef3a5;
+  color: #c495fd;
+  transform: scale(101%);
 }
 
 .header-socials span {

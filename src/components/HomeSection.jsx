@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import ScrollIndicator from './ScrollIndicator';
-import homeLogo from '../images/Static assets-amico.svg';
+import homeLogo from '../images/Static assets-amico (1).svg';
 import '../styles/HomeSection.css';
 
 export default function HomeSection() {
@@ -9,11 +9,18 @@ export default function HomeSection() {
     const phrase = "Hey! I'm Pedro Guarize.";
     return (
       <div>
-        {phrase.split('').map((letter, index) => (
+        {phrase.split('').map((letter, index) => (letter === '!' ? (
+          <>
+            <span key={index} className="home-intro-letter">
+              {letter}
+            </span>
+            <br />
+          </>
+        ) : (
           <span key={index} className="home-intro-letter">
             {letter}
           </span>
-        ))}
+        )))}
       </div>
     );
   };
@@ -27,7 +34,11 @@ export default function HomeSection() {
         <div className="home-text">
           <span className="html-tag">{'<section>'}</span>
           <p className="home-role">Front-End Developer</p>
-          <h1 className="home-intro">{createHomeIntro()}</h1>
+          <div className="home-intro-container">
+            <span className="html-tag">{'<h1>'}</span>
+            <h1 className="home-intro">{createHomeIntro()}</h1>
+            <span className="html-tag">{'<h1>'}</span>
+          </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
             maiores eveniet totam fugiat dolore.

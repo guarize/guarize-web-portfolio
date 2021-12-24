@@ -1,14 +1,17 @@
 import PropTypes from 'prop-types';
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import PortfolioContext from '../context/PortfolioContext';
 
 export default function PortfolioProvider({ children }) {
   const [stateA, setStateA] = useState([]);
 
-  const CONTEXT_VALUE = {
-    stateA,
-    setStateA,
-  };
+  const CONTEXT_VALUE = useMemo(
+    () => ({
+      stateA,
+      setStateA,
+    }),
+    [],
+  );
 
   return (
     <PortfolioContext.Provider value={CONTEXT_VALUE}>

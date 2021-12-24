@@ -13,6 +13,10 @@
 }
 
 .toolbox-title {
-  font-size: 3.3rem;
-  margin-top: 80px;
+  font-size: 2.3rem;
+  margin: 30px 0 70px;
+}
+
+.toolbox-title h2 {
+  margin: 0;
 }

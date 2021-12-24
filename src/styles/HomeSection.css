@@ -31,29 +31,35 @@
 }
 
 .home-role {
-  background-color: #6ef3a5;
+  background-color: #c495fd;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 190px;
+  font-weight: 600;
   text-align: center;
-  height: 25px;
+  height: 30px;
   border-radius: 5px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #1d1d1d;
+}
+
+.home-intro-container {
+  margin-left: 20px;
 }
 
 .home-intro {
   font-size: 3.6rem;
+  margin: 0 0 0 10px;
 }
 
 .home-intro-letter {
   margin: 12px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .home-intro-letter:hover {
-  color: #6ef3a5;
+  color: #c495fd;
 }
 
 .home-avatar {
