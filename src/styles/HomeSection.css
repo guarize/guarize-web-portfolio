@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: #1d1d1d;
+  margin: 0;
+}
+
+.home-container {
+  display: flex;
+  margin: 60px auto;
+  align-items: center;
+  justify-content: space-between;
+  width: 67%;
+  height: 700px;
+  color: #fefefe;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-text {
+  width: 560px;
+  margin-right: 50px;
+}
+
+.home-text span {
+  margin-left: -13px;
+}
+
+.home-role {
+  background-color: #6ef3a5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  text-align: center;
+  height: 25px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #1d1d1d;
+}
+
+.home-intro {
+  font-size: 3.6rem;
+}
+
+.home-intro-letter {
+  margin: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.home-intro-letter:hover {
+  color: #6ef3a5;
+}
+
+.home-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.home-svg {
+  position: absolute;
+  width: 800px;
+  z-index: 1;
+  right: -70px;
+  bottom: -70px;
+}
+
+.home-avatar img {
+  width: 500px;
+  height: 500px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 400px) {
+  .home-avatar {
+    display: none;
+  }
+}

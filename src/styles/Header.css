@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.header-wrapper {
+  font-family: 'Poppins', sans-serif;
+  width: 99vw;
+  background-color: #1d1d1d;
+  height: 70px;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fefefe;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+
+.header-name {
+  font-size: 1.5rem;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  font-size: 1rem;
+}
+
+.header-menu p {
+  cursor: pointer;
+  position: relative;
+}
+
+.header-menu p:hover {
+  color: #6ef3a5;
+}
+
+.header-menu p:hover::before {
+  content: '<';
+  position: absolute;
+  left: -20px;
+}
+
+.header-menu p:hover::after {
+  content: '>';
+  position: absolute;
+  right: -20px;
+}
+
+.header-socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.header-socials a {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.header-socials a:hover {
+  color: #6ef3a5;
+}
+
+.header-socials span {
+  margin-left: 10px;
+  font-size: 1rem;
+}
