@@ -83,6 +83,23 @@
   width: 500px;
   height: 500px;
   z-index: 1;
+  transform: translateY(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    filter: drop-shadow(0 5px 15px 0px rgba(0, 0, 0, 0.6));
+    transform: translatey(0px);
+  }
+  50% {
+    filter: drop-shadow(0 25px 15px 0px rgba(0, 0, 0, 0.2));
+    transform: translatey(-20px);
+  }
+  100% {
+    filter: drop-shadow(0 5px 15px 0px rgba(0, 0, 0, 0.6));
+    transform: translatey(0px);
+  }
 }
 
 @media only screen and (max-width: 400px) {

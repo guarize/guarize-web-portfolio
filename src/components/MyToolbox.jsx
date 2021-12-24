@@ -1,5 +1,8 @@
 import React from 'react';
+import FrontEndTools from './FrontEndTools';
 import '../styles/MyToolbox.css';
+import GeneralTools from './GeneralTools';
+import ScrollIndicator from './ScrollIndicator';
 
 function MyToolbox() {
   return (
@@ -10,13 +13,10 @@ function MyToolbox() {
         <span className="html-tag">{'</h2>'}</span>
       </div>
       <span className="html-tag">{'<section>'}</span>
-      <div>
-        <p>Front-End</p>
-      </div>
-      <div>
-        <p>General</p>
-      </div>
+      <FrontEndTools />
+      <GeneralTools />
       <span className="html-tag">{'</section>'}</span>
+      <ScrollIndicator />
     </section>
   );
 }

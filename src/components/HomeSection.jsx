@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import ScrollIndicator from './ScrollIndicator';
-import homeLogo from '../images/Static assets-amico (1).svg';
+import homeLogo from '../assets/images/home-logo-programming.svg';
 import '../styles/HomeSection.css';
 
 export default function HomeSection() {
@@ -10,12 +10,10 @@ export default function HomeSection() {
     return (
       <div>
         {phrase.split('').map((letter, index) => (letter === '!' ? (
-          <>
-            <span key={index} className="home-intro-letter">
-              {letter}
-            </span>
+          <span key={index} className="home-intro-letter">
+            {letter}
             <br />
-          </>
+          </span>
         ) : (
           <span key={index} className="home-intro-letter">
             {letter}

@@ -3,12 +3,12 @@ import React, { useMemo, useState } from 'react';
 import PortfolioContext from '../context/PortfolioContext';
 
 export default function PortfolioProvider({ children }) {
-  const [stateA, setStateA] = useState([]);
+  const [darkMode, setDarkMode] = useState([]);
 
   const CONTEXT_VALUE = useMemo(
     () => ({
-      stateA,
-      setStateA,
+      darkMode,
+      setDarkMode,
     }),
     [],
   );

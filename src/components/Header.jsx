@@ -25,7 +25,7 @@ export default function Header() {
             rel="noreferrer"
           >
             <BsLinkedin />
-            <span>Linkedin</span>
+            <span>LinkedIn</span>
           </a>
         </section>
         <span className="html-tag">{'</header>'}</span>
