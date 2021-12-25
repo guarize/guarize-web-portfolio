@@ -13,11 +13,20 @@ function MyToolbox() {
       className={darkMode ? 'toolbox-wrapper-dark' : 'toolbox-wrapper-light'}
       id="toolbox"
     >
-      <div className="toolbox-title">
-        <span className="html-tag">{'<h2>'}</span>
-        <h2>My Toolbox</h2>
-        <span className="html-tag">{'</h2>'}</span>
-      </div>
+      <section className="toolbox-title">
+        <div>
+          <span className="html-tag">{'<h2>'}</span>
+          <h2>My Toolbox</h2>
+          <span className="html-tag">{'</h2>'}</span>
+        </div>
+        <div>
+          <span className="html-tag">{'<p>'}</span>
+          <p>
+            The skills, tools and technologies I use to bring projects to life:
+          </p>
+          <span className="html-tag">{'</p>'}</span>
+        </div>
+      </section>
       <section className="toolbox-skills">
         <span className="html-tag">{'<section>'}</span>
         <FrontEndTools />

@@ -20,14 +20,8 @@
 }
 
 .toolbox-wrapper-light li {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#9b30f9),
-    to(#84e)
-  );
-  background-image: linear-gradient(#9b30f9, #84e);
+  background-image: var(--bg-gradient);
+  background-image: var(--bg-image);
   border: 1px solid transparent;
 }
 
@@ -38,6 +32,18 @@
 
 .toolbox-title h2 {
   margin: 0 20px;
+  text-align: center;
+}
+
+.toolbox-title div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolbox-title div p {
+  font-size: 1.4rem;
+  margin: 20px;
 }
 
 .toolbox-skills {
@@ -73,8 +79,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 7rem;
-  height: 7rem;
+  width: 9rem;
+  height: 9rem;
   border-radius: 10px;
   background-color: #251f2d;
   border: 2px solid #3b2b51;
@@ -89,7 +95,7 @@
 
 .languages-container li div {
   display: flex;
-  font-size: 2.7rem;
+  font-size: 3rem;
   margin-bottom: 15px;
 }
 
@@ -97,4 +103,5 @@
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 2px;
+  text-align: center;
 }

@@ -10,12 +10,15 @@
 
 html {
   --font: 'Titillium Web', sans-serif;
-  --font-title: Georgia, 'Times New Roman', Times, serif;
   --font-size: 1.2rem;
-  --color: #19f;
-  --color-light: #adf;
-  --color-dark: #018;
-  --radius: 0.2rem;
+  --bg-gradient: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#9b30f9),
+    to(#84e)
+  );
+  --bg-image: linear-gradient(#9b30f9, #84e);
   scroll-behavior: smooth;
 }
 

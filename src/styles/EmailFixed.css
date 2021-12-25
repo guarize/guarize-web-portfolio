@@ -1,0 +1,29 @@
+.email-fixed-dark, .email-fixed-light {
+  display: flex;
+  width: 385px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 3;
+  color: #fefefe;
+  bottom: 134px;
+  right: -130px;
+  transform: rotate(90deg);
+  font-family: var(--font);
+}
+
+.email-text {
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.email-text:hover {
+  transform: translateX(-7px);
+  color: #9b30f9;
+}
+
+.email-fixed-line {
+  width: 110px;
+}

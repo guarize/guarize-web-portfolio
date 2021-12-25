@@ -2,6 +2,8 @@ import React from 'react';
 import {
   SiVisualstudiocode, SiGit, SiGithub, SiTrello,
 } from 'react-icons/si';
+import { FaTerminal } from 'react-icons/fa';
+import { RiDeviceLine } from 'react-icons/ri';
 
 export default function GeneralTools() {
   return (
@@ -32,6 +34,18 @@ export default function GeneralTools() {
             <SiTrello />
           </div>
           <span>Trello</span>
+        </li>
+        <li>
+          <div>
+            <FaTerminal />
+          </div>
+          <span>Command Line</span>
+        </li>
+        <li>
+          <div>
+            <RiDeviceLine />
+          </div>
+          <span>Responsive Websites</span>
         </li>
         <span className="html-tag">{'</ul>'}</span>
       </ul>

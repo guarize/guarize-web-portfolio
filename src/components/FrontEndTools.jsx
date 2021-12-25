@@ -19,13 +19,13 @@ export default function FrontEndTools() {
           <div>
             <SiHtml5 />
           </div>
-          <span>HTML</span>
+          <span>HTML5</span>
         </li>
         <li>
           <div>
             <SiCss3 />
           </div>
-          <span>CSS</span>
+          <span>CSS3</span>
         </li>
         <li>
           <div>
