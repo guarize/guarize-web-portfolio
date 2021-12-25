@@ -8,6 +8,7 @@ export default function FrontEndTools() {
     <div className="front-end-container">
       <p>Front-end</p>
       <ul className="languages-container">
+        <span className="html-tag">{'<ul>'}</span>
         <li>
           <div>
             <SiJavascript />
@@ -50,6 +51,7 @@ export default function FrontEndTools() {
           </div>
           <span>Redux</span>
         </li>
+        <span className="html-tag">{'</ul>'}</span>
       </ul>
     </div>
   );

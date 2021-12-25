@@ -1,16 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-/* 6ef3a5 */
-
-.header-wrapper {
-  font-family: 'Poppins', sans-serif;
-  width: 99vw;
-  background-color: #1d1d1d;
+.header-wrapper-dark,
+.header-wrapper-ligth {
+  font-family: var(--font);
+  width: 100vw;
   height: 70px;
   margin-top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header-wrapper-dark {
+  background-color: #1d1d1d;
+  color: #fefefe;
+}
+
+.header-wrapper-ligth {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#9b30f9),
+    to(#84e)
+  );
+  background-image: linear-gradient(#9b30f9, #84e);
+  color: #fefefe;
+}
+
+.header-wrapper-ligth span {
   color: #fefefe;
 }
 
@@ -21,8 +37,8 @@
   width: 90%;
 }
 
-.header-name {
-  font-size: 1.5rem;
+.header-logo {
+  width: 110px;
 }
 
 .header-menu {
@@ -30,25 +46,27 @@
   align-items: center;
   justify-content: space-between;
   width: 25%;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
-.header-menu p {
+.header-menu a {
   cursor: pointer;
   position: relative;
+  text-decoration: none;
+  color: #fefefe;
 }
 
-.header-menu p:hover {
+.header-menu a:hover {
   color: #c495fd;
 }
 
-.header-menu p:hover::before {
+.header-menu a:hover::before {
   content: '<';
   position: absolute;
   left: -20px;
 }
 
-.header-menu p:hover::after {
+.header-menu a:hover::after {
   content: '>';
   position: absolute;
   right: -20px;
@@ -76,5 +94,5 @@
 
 .header-socials span {
   margin-left: 10px;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }

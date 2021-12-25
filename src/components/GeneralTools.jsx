@@ -8,6 +8,7 @@ export default function GeneralTools() {
     <div className="general-container">
       <p>General</p>
       <ul className="languages-container">
+        <span className="html-tag">{'<ul>'}</span>
         <li>
           <div>
             <SiVisualstudiocode />
@@ -32,6 +33,7 @@ export default function GeneralTools() {
           </div>
           <span>Trello</span>
         </li>
+        <span className="html-tag">{'</ul>'}</span>
       </ul>
     </div>
   );

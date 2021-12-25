@@ -1,6 +1,7 @@
 .mouse_scroll {
   display: block;
-  margin: 5px 0 auto;
+  margin: 0px 0 auto;
+  color: #9b30f9;
 }
 
 .m_scroll_arrows {
@@ -10,8 +11,8 @@
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
+  border-right: 2px solid #9b30f9;
+  border-bottom: 2px solid #9b30f9;
   margin: 0 0 3px 4px;
   width: 16px;
   height: 16px;
@@ -65,7 +66,7 @@
   width: 24px;
   border-radius: 14px;
   transform: none;
-  border: 2px solid white;
+  border: 2px solid #9b30f9;
   top: 170px;
 }
 
@@ -74,12 +75,12 @@
   width: 2px;
   display: block;
   margin: 5px auto;
-  background: white;
+  background: #9b30f9;
   position: relative;
 
   height: 4px;
   width: 4px;
-  border: 2px solid #fff;
+  border: 2px solid #9b30f9;
   -webkit-border-radius: 8px;
   border-radius: 8px;
 }

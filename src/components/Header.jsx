@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import LightDarkButton from './LightDarkButton';
+import headerLogo from '../assets/images/pg-logo.png';
 import '../styles/Header.css';
+import PortfolioContext from '../context/PortfolioContext';
 
 export default function Header() {
+  const { darkMode } = useContext(PortfolioContext);
+
   return (
-    <header className="header-wrapper">
+    <header
+      className={darkMode ? 'header-wrapper-dark' : 'header-wrapper-ligth'}
+    >
       <section className="header-container">
         <span className="html-tag">{'<header>'}</span>
-        <p className="header-name">Pedro Guarize</p>
+        <img src={headerLogo} alt="pg logo" className="header-logo" />
         <div className="header-menu">
-          <p>About</p>
-          <p>Skills</p>
-          <p>Projects</p>
-          <p>Contacts</p>
+          <a href="#toolbox">About</a>
+          <a href="#toolbox">Skills</a>
+          <a href="#toolbox">Projects</a>
+          <a href="#toolbox">Contacts</a>
         </div>
         <section className="header-socials">
           <a href="https://github.com/guarize" target="_blank" rel="noreferrer">
@@ -28,6 +35,7 @@ export default function Header() {
             <span>LinkedIn</span>
           </a>
         </section>
+        <LightDarkButton />
         <span className="html-tag">{'</header>'}</span>
       </section>
     </header>

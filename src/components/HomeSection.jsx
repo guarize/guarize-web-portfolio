@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Header from './Header';
 import ScrollIndicator from './ScrollIndicator';
 import homeLogo from '../assets/images/home-logo-programming.svg';
 import '../styles/HomeSection.css';
+import PortfolioContext from '../context/PortfolioContext';
 
 export default function HomeSection() {
+  const { darkMode } = useContext(PortfolioContext);
+
   const createHomeIntro = () => {
     const phrase = "Hey! I'm Pedro Guarize.";
     return (
@@ -26,7 +29,7 @@ export default function HomeSection() {
   createHomeIntro();
 
   return (
-    <section className="home-section">
+    <section className={darkMode ? 'home-section-dark' : 'home-section-light'}>
       <Header />
       <section className="home-container">
         <div className="home-text">

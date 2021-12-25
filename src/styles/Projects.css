@@ -1,0 +1,19 @@
+.projects-wrapper-dark,
+.projects-wrapper-light {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.projects-wrapper-dark {
+  background-color: #1d1d1d;
+  color: #fefefe;
+}
+
+.projects-wrapper-light {
+  background-color: #fefefe;
+  color: #1d1d1d;
+}

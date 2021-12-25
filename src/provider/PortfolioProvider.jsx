@@ -1,17 +1,15 @@
 import PropTypes from 'prop-types';
-import React, { useMemo, useState } from 'react';
+import React, { useState } from 'react';
 import PortfolioContext from '../context/PortfolioContext';
 
 export default function PortfolioProvider({ children }) {
-  const [darkMode, setDarkMode] = useState([]);
+  const [darkMode, setDarkMode] = useState(true);
 
-  const CONTEXT_VALUE = useMemo(
-    () => ({
-      darkMode,
-      setDarkMode,
-    }),
-    [],
-  );
+  // eslint-disable-next-line react/jsx-no-constructed-context-values
+  const CONTEXT_VALUE = {
+    darkMode,
+    setDarkMode,
+  };
 
   return (
     <PortfolioContext.Provider value={CONTEXT_VALUE}>
