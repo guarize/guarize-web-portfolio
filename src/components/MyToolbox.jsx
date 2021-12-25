@@ -18,10 +18,12 @@ function MyToolbox() {
         <h2>My Toolbox</h2>
         <span className="html-tag">{'</h2>'}</span>
       </div>
-      <span className="html-tag">{'<section>'}</span>
-      <FrontEndTools />
-      <GeneralTools />
-      <span className="html-tag">{'</section>'}</span>
+      <section className="toolbox-skills">
+        <span className="html-tag">{'<section>'}</span>
+        <FrontEndTools />
+        <GeneralTools />
+        <span className="html-tag">{'</section>'}</span>
+      </section>
       <ScrollIndicator />
     </section>
   );

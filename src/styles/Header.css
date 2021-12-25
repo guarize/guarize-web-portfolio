@@ -1,5 +1,5 @@
 .header-wrapper-dark,
-.header-wrapper-ligth {
+.header-wrapper-light {
   font-family: var(--font);
   width: 100vw;
   height: 70px;
@@ -7,6 +7,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  z-index: 2;
 }
 
 .header-wrapper-dark {
@@ -14,7 +16,7 @@
   color: #fefefe;
 }
 
-.header-wrapper-ligth {
+.header-wrapper-light {
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -26,7 +28,7 @@
   color: #fefefe;
 }
 
-.header-wrapper-ligth span {
+.header-wrapper-light span {
   color: #fefefe;
 }
 

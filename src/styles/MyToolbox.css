@@ -33,11 +33,19 @@
 
 .toolbox-title {
   font-size: 2.3rem;
-  margin: 15px 0 70px;
+  margin: 15px 0 50px;
 }
 
 .toolbox-title h2 {
   margin: 0 20px;
+}
+
+.toolbox-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .front-end-container, .general-container {

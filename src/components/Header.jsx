@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <header
-      className={darkMode ? 'header-wrapper-dark' : 'header-wrapper-ligth'}
+      className={darkMode ? 'header-wrapper-dark' : 'header-wrapper-light'}
     >
       <section className="header-container">
         <span className="html-tag">{'<header>'}</span>
@@ -18,7 +18,7 @@ export default function Header() {
         <div className="header-menu">
           <a href="#toolbox">About</a>
           <a href="#toolbox">Skills</a>
-          <a href="#toolbox">Projects</a>
+          <a href="#projects">Projects</a>
           <a href="#toolbox">Contacts</a>
         </div>
         <section className="header-socials">

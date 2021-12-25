@@ -40,7 +40,7 @@ export default function HomeSection() {
             <h1 className="home-intro">{createHomeIntro()}</h1>
             <span className="html-tag">{'<h1>'}</span>
           </div>
-          <p>
+          <p className="home-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
             maiores eveniet totam fugiat dolore.
           </p>
