@@ -154,8 +154,7 @@
 @media only screen and (max-width: 1250px) {
   .home-section-dark,
   .home-section-light {
-    min-height: 70vh;
-    margin: 0;
+    min-height: 100vh;
   }
 
   .home-container {
