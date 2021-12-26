@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import LightDarkButton from './LightDarkButton';
 import headerLogo from '../assets/images/pg-logo.png';
-import '../styles/Header.css';
 import PortfolioContext from '../context/PortfolioContext';
+import '../styles/Header.css';
 
 export default function Header() {
   const { darkMode } = useContext(PortfolioContext);

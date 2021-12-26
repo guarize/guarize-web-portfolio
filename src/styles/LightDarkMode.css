@@ -7,3 +7,9 @@
 .light-mode-container button:hover {
   transform: scale(105%);
 }
+
+@media only screen and (max-width: 481px) {
+  .light-mode-container button img {
+    width: 20px;
+  }
+}

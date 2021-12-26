@@ -111,3 +111,9 @@
     width: 90px;
   }
 }
+
+@media only screen and (max-width: 481px) {
+  .header-logo {
+    width: 70px;
+  }
+}
