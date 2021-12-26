@@ -41,8 +41,7 @@ export default function HomeSection() {
             <span className="html-tag">{'<h1>'}</span>
           </div>
           <p className="home-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-            maiores eveniet totam fugiat dolore.
+            I&apos;m a passionate Front-end developer based in Brazil.
           </p>
           <span className="html-tag">{'</section>'}</span>
         </div>
