@@ -67,6 +67,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 80vw;
+  margin: auto;
 }
 
 .toolbox-wrapper-dark p, .toolbox-wrapper-light p {
@@ -104,4 +105,39 @@
   font-weight: 700;
   letter-spacing: 2px;
   text-align: center;
+}
+
+@media only screen and (max-width: 1015px) {
+  .toolbox-title {
+    font-size: 2.0rem;
+    margin: 15px 0 30px;
+  }
+  
+  .toolbox-title h2 {
+    margin: 10px 30px;
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  .toolbox-title div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .toolbox-title div p {
+    font-size: 1.2rem;
+    margin: 10px 20px;
+  }
+
+  .languages-container  {
+    width: 90vw;
+    padding: 0;
+  }
+
+  .languages-container .html-tag {
+    display: none;
+  }
 }

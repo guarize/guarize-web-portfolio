@@ -167,3 +167,9 @@
     zoom: 0.9;
   }
 }
+
+@media only screen and (max-width: 1015px) {
+  .project-card {
+    zoom: 0.7;
+  }
+}

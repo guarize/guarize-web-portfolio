@@ -106,4 +106,8 @@
   .header-navbar {
     display: none;
   }
+
+  .header-logo {
+    width: 90px;
+  }
 }

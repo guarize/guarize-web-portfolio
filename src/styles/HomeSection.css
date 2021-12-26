@@ -177,4 +177,25 @@
   .home-avatar {
     display: none;
   }
+
+  .home-container {
+    margin: 20px auto -30px auto;
+    width: 90%;
+    height: 600px;
+  }
+
+  .home-text {
+    max-width: 80%;
+    margin-right: 0;
+  }
+
+  .home-intro {
+    font-size: 2.5rem;
+    margin: 0 0 0 10px;
+  }
+
+  .home-description {
+    max-width: 100%;
+    font-size: 1.1rem;
+  }
 }
