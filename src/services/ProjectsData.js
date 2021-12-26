@@ -3,6 +3,7 @@ import musicAppImg from '../assets/projects/trybetunes-preview.png';
 import topTrumpsImg from '../assets/projects/tryunfo-preview2.png';
 import flexblogImg from '../assets/projects/flexblog.png';
 import expensesManagerImg from '../assets/projects/expenses-manager-login.png';
+import todoListImg from '../assets/projects/todo-list-guarize.png';
 
 const portfolio = [
   {
@@ -22,6 +23,15 @@ const portfolio = [
     tools: ['React', 'Redux', 'CSS'],
     liveProject: 'https://expenses-manager.vercel.app/',
     githubCode: 'https://github.com/guarize/expenses-manager',
+  },
+  {
+    name: 'ToDo List',
+    image: todoListImg,
+    description:
+      'This is a solution to the Todo app challenge on Frontend Mentor',
+    tools: ['React', 'Hooks', 'CSS'],
+    liveProject: 'https://todo-list-guarize.vercel.app/',
+    githubCode: 'https://github.com/guarize/todo-list-2.0',
   },
   {
     name: 'Flexblog',
