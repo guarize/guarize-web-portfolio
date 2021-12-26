@@ -170,6 +170,18 @@
 
 @media only screen and (max-width: 1015px) {
   .project-card {
-    zoom: 0.7;
+    zoom: 0.75;
+  }
+
+  .project-name h4 {
+    font-size: 1.3rem;
+    margin: 20px 0 20px 0;
+  }
+
+  .project-name p {
+    font-size: 0.7rem;
+    height: 60px;
+    margin-bottom: 40px;
+    overflow-y: scroll;
   }
 }
