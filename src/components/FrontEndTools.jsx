@@ -2,6 +2,7 @@ import React from 'react';
 import {
   SiJavascript, SiHtml5, SiCss3, SiReact, SiJest, SiBootstrap, SiRedux,
 } from 'react-icons/si';
+import rtlLogo from '../assets/images/testing-library.svg';
 
 export default function FrontEndTools() {
   return (
@@ -38,6 +39,12 @@ export default function FrontEndTools() {
             <SiJest />
           </div>
           <span>Jest</span>
+        </li>
+        <li>
+          <div>
+            <img src={rtlLogo} alt="rtl logo" />
+          </div>
+          <span>Testing Library</span>
         </li>
         <li>
           <div>

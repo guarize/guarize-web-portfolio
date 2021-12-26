@@ -100,6 +100,11 @@
   margin-bottom: 15px;
 }
 
+.languages-container li img {
+  width: 3rem;
+  filter: brightness(0) invert(1);
+}
+
 .languages-container li span {
   font-size: 0.9rem;
   font-weight: 700;
