@@ -26,13 +26,13 @@ export default function ProjectCard() {
               <div className="project-buttons">
                 <a href={liveProject} target="_blank" rel="noreferrer">
                   <button type="button" className="project-view">
-                    View Project
+                    <span>View Project</span>
                     <HiOutlineArrowNarrowRight />
                   </button>
                 </a>
                 <a href={githubCode} target="_blank" rel="noreferrer">
                   <button type="button">
-                    View Code
+                    <span>View Code</span>
                     <HiOutlineArrowNarrowRight />
                   </button>
                 </a>

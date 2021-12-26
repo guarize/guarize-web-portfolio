@@ -21,7 +21,7 @@
 
 .projects-title {
   font-size: 2.3rem;
-  margin: 15px 0 70px;
+  margin: 15px 0 40px;
 }
 
 .projects-title h2 {
@@ -34,7 +34,7 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 50px;
-  width: 80%;
+  width: 90%;
 }
 
 .project-card {
@@ -47,7 +47,7 @@
   border-radius: 10px;
   box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),
     0 1px 10px 0 rgb(0 0 0 / 12%);
-  margin: 50px;
+  margin: 40px;
 }
 
 .project-card-info {
@@ -97,10 +97,10 @@
 .project-tools button {
   font-size: 0.9rem;
   border: 2px solid #6a6b6f;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 80px;
   height: 30px;
-  margin-right: 5px;
+  margin-right: 9px;
   color: #6a6b6f;
   background-color: transparent;
 }
@@ -134,7 +134,24 @@
   color: #fefefe;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease;
+}
+
+.project-buttons button svg {
+  font-size: 1.2rem;
+  opacity: 0;
+  margin-right: -80px;
+  position: absolute;
+  transition: all 0.4s ease-out;
+}
+
+.project-buttons button:hover svg {
+  opacity: 1;
+  margin-right: -100px;
+}
+
+.project-buttons button:hover span {
+  margin-right: 20px;
 }
 
 .project-buttons button:hover {
@@ -143,4 +160,10 @@
 
 .project-buttons button svg {
   margin-left: 10px;
+}
+
+@media only screen and (max-width: 1366px) {
+  .project-card {
+    zoom: 0.9;
+  }
 }

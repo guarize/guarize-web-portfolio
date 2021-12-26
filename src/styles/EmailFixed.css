@@ -6,7 +6,7 @@
   position: fixed;
   z-index: 3;
   color: #fefefe;
-  bottom: 134px;
+  bottom: 120px;
   right: -130px;
   transform: rotate(90deg);
   font-family: var(--font);
@@ -25,5 +25,12 @@
 }
 
 .email-fixed-line {
-  width: 110px;
+  margin-left: 40px;
+  width: 90px;
+}
+
+@media only screen and (max-width: 768px) {
+  .email-fixed-dark, .email-fixed-light {
+    display: none;
+  }
 }
