@@ -77,7 +77,6 @@
   margin: 5px auto;
   background: #9b30f9;
   position: relative;
-
   height: 4px;
   width: 4px;
   border: 2px solid #9b30f9;
@@ -202,5 +201,11 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1015px) {
+  .mouse_scroll {
+    zoom: 0.7;
   }
 }
