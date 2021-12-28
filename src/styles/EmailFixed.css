@@ -16,7 +16,7 @@
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
+  cursor: copy;
 }
 
 .email-text:hover {
