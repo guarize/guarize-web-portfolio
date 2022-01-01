@@ -119,6 +119,10 @@
     margin: 0 0 15px 0;
   }
 
+  .header-socials a span {
+    margin-left: 10px;
+  }
+
   .header-socials {
     flex-direction: column;
     align-items: flex-start;
