@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
-import { stack as Menu } from 'react-burger-menu';
+import { bubble as Menu } from 'react-burger-menu';
 import useWindowDimensions from '../services/WindowDimensions';
 import burgerStyles from '../services/BurgerStyles';
 
@@ -33,7 +33,7 @@ export default function NavBar() {
   );
 
   return screenWidth <= 1015 ? (
-    <Menu right styles={burgerStyles}>
+    <Menu right styles={burgerStyles} disableAutoFocus disableOverlayClick="false">
       {navItems()}
     </Menu>
   ) : (
