@@ -21,6 +21,7 @@ export default {
   bmMenuWrap: {
     position: 'fixed',
     height: '100%',
+    top: '0',
   },
   bmMenu: {
     background: '#373a47',
