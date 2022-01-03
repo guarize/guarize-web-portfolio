@@ -12,10 +12,21 @@ export default function ProjectCard() {
   return (
     <>
       {portfolio.map(
-        ({
-          name, image, description, tools, liveProject, githubCode,
-        }) => (
-          <div className="project-card" data-aos="fade-up" data-aos-once="true">
+        (
+          {
+            name, image, description, tools, liveProject, githubCode,
+          },
+          index,
+        ) => (
+          <div
+            className={`project-card card-trigger-${index}`}
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-anchor={
+              index === 0 ? undefined : `.card-trigger-${index - 1}`
+            }
+            data-aos-anchor-placement="top-center"
+          >
             <img src={image} alt={name} className="project-preview" />
             <div className="project-card-info">
               <div className="project-name-tools">
