@@ -187,6 +187,15 @@
 }
 
 @media only screen and (max-width: 481px) {
+
+  .projects-container {
+    margin-bottom: 80px;
+  }
+
+  .project-card {
+    margin: 20px;
+  }
+
   .project-buttons button svg {
     display: none;
   }

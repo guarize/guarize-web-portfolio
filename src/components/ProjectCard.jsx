@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 export default function ProjectCard() {
   useEffect(() => {
-    Aos.init({ duration: 500 });
+    Aos.init({ duration: 800 });
   }, []);
 
   return (
@@ -15,7 +15,7 @@ export default function ProjectCard() {
         ({
           name, image, description, tools, liveProject, githubCode,
         }) => (
-          <div className="project-card" data-aos="fade-up">
+          <div className="project-card" data-aos="fade-up" data-aos-once="true">
             <img src={image} alt={name} className="project-preview" />
             <div className="project-card-info">
               <div className="project-name-tools">
