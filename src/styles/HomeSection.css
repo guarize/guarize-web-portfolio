@@ -99,8 +99,8 @@
 
 .home-avatar img {
   position: absolute;
-  right: 20px;
-  bottom: 35px;
+  right: 15px;
+  bottom: 30px;
   max-width: 500px;
   max-height: 500px;
   z-index: 1;
