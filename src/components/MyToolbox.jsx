@@ -1,10 +1,11 @@
-import React, { useContext, useEffect } from 'react';
+import React, {
+  useContext, useEffect, lazy, Suspense,
+} from 'react';
 import Aos from 'aos';
-import FrontEndTools from './FrontEndTools';
 import '../styles/MyToolbox.css';
-import GeneralTools from './GeneralTools';
 import ScrollIndicator from './ScrollIndicator';
 import PortfolioContext from '../context/PortfolioContext';
+import Loading from './Loading';
 import 'aos/dist/aos.css';
 
 function MyToolbox() {
@@ -13,6 +14,9 @@ function MyToolbox() {
   }, []);
 
   const { darkMode } = useContext(PortfolioContext);
+
+  const FrontEndTools = lazy(() => import('./FrontEndTools'));
+  const GeneralTools = lazy(() => import('./GeneralTools'));
 
   return (
     <section
@@ -47,8 +51,12 @@ function MyToolbox() {
       </section>
       <section className="toolbox-skills">
         <span className="html-tag">{'<section>'}</span>
-        <FrontEndTools />
-        <GeneralTools />
+        <Suspense fallback={<Loading />}>
+          <FrontEndTools />
+        </Suspense>
+        <Suspense fallback={<Loading />}>
+          <GeneralTools />
+        </Suspense>
         <span className="html-tag">{'</section>'}</span>
       </section>
       <ScrollIndicator />
