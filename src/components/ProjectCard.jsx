@@ -26,6 +26,7 @@ export default function ProjectCard() {
               index === 0 ? undefined : `.card-trigger-${index - 1}`
             }
             data-aos-anchor-placement="top-center"
+            key={index}
           >
             <img src={image} alt={name} className="project-preview" />
             <div className="project-card-info">
@@ -36,7 +37,7 @@ export default function ProjectCard() {
                 </div>
                 <div className="project-tools">
                   {tools.map((tool) => (
-                    <button type="button">{tool}</button>
+                    <button type="button" key={tool}>{tool}</button>
                   ))}
                 </div>
               </div>

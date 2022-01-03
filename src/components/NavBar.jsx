@@ -33,7 +33,7 @@ export default function NavBar() {
   );
 
   return screenWidth <= 1015 ? (
-    <Menu right styles={burgerStyles} disableAutoFocus disableOverlayClick="false">
+    <Menu right styles={burgerStyles} disableAutoFocus>
       {navItems()}
     </Menu>
   ) : (

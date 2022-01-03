@@ -22,6 +22,28 @@
   color: #fefefe;
 }
 
+@keyframes fadeIn {
+  from {
+    visibility: hidden;
+    transform: translateY(-80px);
+  }
+  to { 
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    visibility: visible;
+    transform: translateY(0);
+  }
+  to { 
+    visibility: hidden;
+    transform: translateY(-80px);
+  }
+}
+
 .header-wrapper-light span {
   color: #fefefe;
 }
@@ -114,7 +136,8 @@
     width: 100%;
   }
 
-  .header-menu a, .header-socials a {
+  .header-menu a,
+  .header-socials a {
     font-size: 1.2rem;
     margin: 0 0 15px 0;
   }
