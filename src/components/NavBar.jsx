@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { bubble as Menu } from 'react-burger-menu';
+import { Link } from 'react-scroll';
 import useWindowDimensions from '../services/WindowDimensions';
 import burgerStyles from '../services/BurgerStyles';
 
@@ -10,10 +11,9 @@ export default function NavBar() {
   const navItems = () => (
     <section className="header-navbar">
       <section className="header-menu">
-        <a href="#toolbox">About</a>
-        <a href="#toolbox">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#toolbox">Contacts</a>
+        <Link to="toolbox" smooth duration={0} offset={-55}>Skills</Link>
+        <Link to="projects" smooth duration={0} offset={-55}>Projects</Link>
+        <Link to="toolbox" smooth duration={0}>Contacts</Link>
       </section>
       <section className="header-socials">
         <a href="https://github.com/guarize" target="_blank" rel="noreferrer">
