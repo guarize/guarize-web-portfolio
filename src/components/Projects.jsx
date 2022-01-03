@@ -1,10 +1,16 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
+import Aos from 'aos';
 import PortfolioContext from '../context/PortfolioContext';
 import '../styles/Projects.css';
 import ProjectCard from './ProjectCard';
 import ScrollIndicator from './ScrollIndicator';
+import 'aos/dist/aos.css';
 
 export default function Projects() {
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
+
   const { darkMode } = useContext(PortfolioContext);
 
   return (
@@ -13,9 +19,11 @@ export default function Projects() {
       id="projects"
     >
       <div className="projects-title">
-        <span className="html-tag">{'<h2>'}</span>
-        <h2>Portfolio</h2>
-        <span className="html-tag">{'</h2>'}</span>
+        <div>
+          <span data-aos="fade-right" className="html-tag">{'<h2>'}</span>
+          <h2 data-aos="flip-up">Portfolio</h2>
+          <span data-aos="fade-left" className="html-tag">{'</h2>'}</span>
+        </div>
       </div>
       <span className="html-tag">{'<section>'}</span>
       <div className="projects-container">

@@ -14,7 +14,7 @@ export default function GeneralTools() {
 
   return (
     <div className="general-container">
-      <p>General</p>
+      <p data-aos="flip-up">General</p>
       <ul className="languages-container">
         <span className="html-tag">{'<ul>'}</span>
         <li data-aos="fade-up" data-aos-delay="100">
