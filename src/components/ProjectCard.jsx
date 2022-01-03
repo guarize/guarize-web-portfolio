@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
+import Aos from 'aos';
 import portfolio from '../services/ProjectsData';
+import 'aos/dist/aos.css';
 
 export default function ProjectCard() {
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
+
   return (
     <>
       {portfolio.map(
         ({
           name, image, description, tools, liveProject, githubCode,
         }) => (
-          <div className="project-card">
+          <div className="project-card" data-aos="fade-up">
             <img src={image} alt={name} className="project-preview" />
             <div className="project-card-info">
               <div className="project-name-tools">
