@@ -32,7 +32,7 @@ export default function ProjectCard() {
             <div className="project-card-info">
               <div className="project-name-tools">
                 <div className="project-name">
-                  <h4>{name}</h4>
+                  <h3>{name}</h3>
                   <p>{description}</p>
                 </div>
                 <div className="project-tools">
