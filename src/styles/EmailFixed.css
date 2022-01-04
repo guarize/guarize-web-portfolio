@@ -7,12 +7,19 @@
   position: fixed;
   z-index: 3;
   opacity: 0;
-  color: #fefefe;
   bottom: 120px;
   transform: rotate(90deg);
   font-family: var(--font);
   animation: show-email 600ms ease forwards;
   animation-delay: 2s;
+}
+
+.email-fixed-dark {
+  color: #fefefe;
+}
+
+.email-fixed-light {
+  color: #212121;
 }
 
 @keyframes show-email {

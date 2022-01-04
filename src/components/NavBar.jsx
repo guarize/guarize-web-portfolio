@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsGithub, BsLinkedin } from 'react-icons/bs';
+// import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { bubble as Menu } from 'react-burger-menu';
 import { Link } from 'react-scroll';
 import useWindowDimensions from '../services/WindowDimensions';
@@ -15,7 +15,7 @@ export default function NavBar() {
         <Link to="projects" smooth duration={0} offset={-55}>Projects</Link>
         <Link to="toolbox" smooth duration={0}>Contacts</Link>
       </section>
-      <section className="header-socials">
+      {/* <section className="header-socials">
         <a href="https://github.com/guarize" target="_blank" rel="noreferrer">
           <BsGithub />
           <span>Github</span>
@@ -28,7 +28,7 @@ export default function NavBar() {
           <BsLinkedin />
           <span>LinkedIn</span>
         </a>
-      </section>
+      </section> */}
     </section>
   );
 
