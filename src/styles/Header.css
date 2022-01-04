@@ -6,6 +6,7 @@
   margin-top: 0;
   display: flex;
   justify-content: center;
+  opacity: 0;
   align-items: center;
   position: fixed;
   z-index: 2;
@@ -14,10 +15,11 @@
 
 @keyframes show-header {
   from {
-    transform: translateY(-150px);
+    top: -150px;
   }
   to {
-    transform: translateY(0);
+    opacity: 1;
+    top: 0;
   }
 }
 
