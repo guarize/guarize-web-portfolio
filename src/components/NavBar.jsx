@@ -12,7 +12,7 @@ export default function NavBar() {
       <section className="header-menu">
         <Link to="toolbox" smooth duration={0} offset={-55}>Skills</Link>
         <Link to="projects" smooth duration={0} offset={-55}>Projects</Link>
-        <Link to="toolbox" smooth duration={0}>Contacts</Link>
+        <Link to="footer" smooth duration={0}>Contacts</Link>
       </section>
     </section>
   );

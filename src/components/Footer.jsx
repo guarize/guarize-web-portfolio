@@ -14,6 +14,7 @@ export default function Footer() {
   return (
     <footer
       className={darkMode ? 'footer-wrapper-dark' : 'footer-wrapper-light'}
+      id="footer"
     >
       <span className="html-tag">{'<footer>'}</span>
       <div className="footer-container">
