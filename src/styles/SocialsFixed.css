@@ -20,8 +20,16 @@
   color: #fefefe;
 }
 
+.socials-fixed-dark .socials-fixed-line {
+  background-color: #fefefe;
+}
+
 .socials-fixed-light .socials-icons a {
   color: #212121;
+}
+
+.socials-fixed-light .socials-fixed-line {
+  background-color: #212121;
 }
 
 .socials-icons a {

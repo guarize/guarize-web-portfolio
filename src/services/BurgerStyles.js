@@ -12,8 +12,8 @@ export default {
     background: '#a90000',
   },
   bmCrossButton: {
-    height: '30px',
-    width: '30px',
+    height: '38px',
+    width: '38px',
   },
   bmCross: {
     background: '#bdc3c7',
@@ -26,10 +26,11 @@ export default {
   bmMenu: {
     background: '#373a47',
     padding: '2.5em 1.5em 0',
-    fontSize: '1.15em',
+    fontSize: '1.19em',
   },
   bmMorphShape: {
     fill: '#373a47',
+    background: '#373a47',
   },
   bmItemList: {
     color: '#b8b7ad',
@@ -39,6 +40,6 @@ export default {
     display: 'inline-block',
   },
   bmOverlay: {
-    background: 'rgba(0, 0, 0, 0.3)',
+    background: 'transparent',
   },
 };
