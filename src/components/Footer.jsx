@@ -9,7 +9,7 @@ import '../styles/Footer.css';
 export default function Footer() {
   const { darkMode } = useContext(PortfolioContext);
 
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 1250px)' });
 
   return (
     <footer

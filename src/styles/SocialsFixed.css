@@ -63,7 +63,7 @@
   background-color: #fefefe;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1250px) {
   .socials-fixed-dark,
   .socials-fixed-light {
     display: none;
