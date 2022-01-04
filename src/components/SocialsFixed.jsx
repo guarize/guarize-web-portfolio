@@ -10,9 +10,6 @@ export default function SocialsFixed() {
   return (
     <div className={darkMode ? 'socials-fixed-dark' : 'socials-fixed-light'}>
       <div className="socials-icons">
-        <a href="https://github.com/guarize" target="_blank" rel="noreferrer">
-          <VscGithubAlt />
-        </a>
         <a
           href="https://www.linkedin.com/in/pedroguarize/"
           target="_blank"
@@ -20,8 +17,11 @@ export default function SocialsFixed() {
         >
           <FiLinkedin />
         </a>
+        <a href="https://github.com/guarize" target="_blank" rel="noreferrer">
+          <VscGithubAlt />
+        </a>
       </div>
-      <hr className="socials-fixed-line" />
+      <div className="socials-fixed-line" />
     </div>
   );
 }

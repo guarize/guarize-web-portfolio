@@ -1,14 +1,16 @@
 .socials-fixed-dark,
 .socials-fixed-light {
   display: flex;
-  width: 400px;
+  flex-direction: column;
+  width: 70px;
+  height: 400px;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   position: fixed;
   z-index: 4;
   opacity: 0;
-  bottom: -54px;
-  transform: rotate(90deg);
+  bottom: -80px;
   font-family: var(--font);
   animation: show-socials 600ms ease forwards;
   animation-delay: 2s;
@@ -27,7 +29,6 @@
 }
 
 .socials-icons {
-  transform: rotate(-90deg);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -49,13 +50,17 @@
   }
   to {
     opacity: 1;
-    left: -130px;
+    left: 30px;
   }
 }
 
 .socials-fixed-line {
-  margin-left: 50px;
+  margin-top: 60px;
   width: 90px;
+  height: 1px;
+  transform: rotate(90deg);
+  text-align: center;
+  background-color: #fefefe;
 }
 
 @media only screen and (max-width: 768px) {
