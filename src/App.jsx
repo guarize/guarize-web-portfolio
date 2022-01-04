@@ -5,6 +5,7 @@ import PortfolioProvider from './provider/PortfolioProvider';
 import Projects from './components/Projects';
 import EmailFixed from './components/EmailFixed';
 import SocialsFixed from './components/SocialsFixed';
+import Footer from './components/Footer';
 import './styles/App.css';
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
       <HomeSection />
       <MyToolbox />
       <Projects />
+      <Footer />
     </PortfolioProvider>
   );
 }

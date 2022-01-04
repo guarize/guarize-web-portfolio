@@ -110,32 +110,6 @@
   right: -20px;
 }
 
-/* .header-socials {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 29%;
-}
-
-.header-socials a {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-  color: #fefefe;
-  margin-right: 15px;
-}
-
-.header-socials a:hover {
-  color: #c495fd;
-  transform: scale(101%);
-}
-
-.header-socials span {
-  margin-left: 10px;
-  font-size: 1.1rem;
-} */
-
 @media only screen and (max-width: 1050px) {
   .header-logo {
     width: 90px;

@@ -7,7 +7,7 @@
   position: fixed;
   z-index: 4;
   opacity: 0;
-  bottom: -78px;
+  bottom: -54px;
   transform: rotate(90deg);
   font-family: var(--font);
   animation: show-socials 600ms ease forwards;
@@ -32,7 +32,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 100px;
+  height: 90px;
+  width: 50px;
   font-size: 1.5rem;
 }
 
@@ -53,7 +54,7 @@
 }
 
 .socials-fixed-line {
-  margin-left: 60px;
+  margin-left: 50px;
   width: 90px;
 }
 
