@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import homeLogo from '../assets/images/home-logo-programming.svg';
+import homeLogo from '../assets/images/Code typing-bro.svg';
 import PortfolioContext from '../context/PortfolioContext';
 
 export default function HomeAvatar() {
