@@ -16,7 +16,6 @@ export default function GeneralTools() {
     <div className="general-container">
       <p data-aos="flip-up">General</p>
       <ul className="languages-container">
-        <span className="html-tag">{'<ul>'}</span>
         <li data-aos="fade-up" data-aos-delay="100">
           <div>
             <SiVisualstudiocode />
@@ -53,7 +52,6 @@ export default function GeneralTools() {
           </div>
           <span>Responsive Websites</span>
         </li>
-        <span className="html-tag">{'</ul>'}</span>
       </ul>
     </div>
   );

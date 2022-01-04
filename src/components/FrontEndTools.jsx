@@ -21,7 +21,6 @@ export default function FrontEndTools() {
     <div className="front-end-container">
       <p data-aos="flip-up">Front-end</p>
       <ul className="languages-container">
-        <span className="html-tag">{'<ul>'}</span>
         <li data-aos="fade-up" data-aos-delay="100">
           <div>
             <SiJavascript />
@@ -70,7 +69,6 @@ export default function FrontEndTools() {
           </div>
           <span>Redux</span>
         </li>
-        <span className="html-tag">{'</ul>'}</span>
       </ul>
     </div>
   );
