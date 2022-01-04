@@ -46,7 +46,7 @@ export default function HomeSection() {
           <div className="home-intro-container">
             <span className="html-tag">{'<h1>'}</span>
             <h1 className="home-intro" aria-label="Hey! I'm Pedro Guarize.">{createHomeIntro()}</h1>
-            <span className="html-tag">{'<h1>'}</span>
+            <span className="html-tag">{'</h1>'}</span>
           </div>
           <p className="home-description">
             I&apos;m a passionate Front-end developer based in Brazil.
