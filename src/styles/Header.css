@@ -9,6 +9,16 @@
   align-items: center;
   position: fixed;
   z-index: 2;
+  animation: show-header 1s ease forwards;
+}
+
+@keyframes show-header {
+  from {
+    transform: translateY(-150px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .header-wrapper-dark {

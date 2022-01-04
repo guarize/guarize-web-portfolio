@@ -13,20 +13,28 @@ export default function HomeSection() {
     return (
       <div>
         {phrase.split('').map((letter, index) => (letter === '!' ? (
-          <span key={index} className="home-intro-letter">
+          <span
+            key={index}
+            className="home-intro-letter"
+            style={{ animationDelay: `${index * 70}ms` }}
+            aria-hidden="true"
+          >
             {letter}
             <br />
           </span>
         ) : (
-          <span key={index} className="home-intro-letter">
+          <span
+            key={index}
+            className="home-intro-letter"
+            style={{ animationDelay: `${index * 70}ms` }}
+            aria-hidden="true"
+          >
             {letter}
           </span>
         )))}
       </div>
     );
   };
-
-  createHomeIntro();
 
   return (
     <section className={darkMode ? 'home-section-dark' : 'home-section-light'}>
@@ -37,7 +45,7 @@ export default function HomeSection() {
           <p className="home-role">Front-End Developer</p>
           <div className="home-intro-container">
             <span className="html-tag">{'<h1>'}</span>
-            <h1 className="home-intro">{createHomeIntro()}</h1>
+            <h1 className="home-intro" aria-label="Hey! I'm Pedro Guarize.">{createHomeIntro()}</h1>
             <span className="html-tag">{'<h1>'}</span>
           </div>
           <p className="home-description">

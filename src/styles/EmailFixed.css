@@ -1,15 +1,29 @@
-.email-fixed-dark, .email-fixed-light {
+.email-fixed-dark,
+.email-fixed-light {
   display: flex;
   width: 385px;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   z-index: 3;
+  opacity: 0;
   color: #fefefe;
   bottom: 120px;
-  right: -130px;
   transform: rotate(90deg);
   font-family: var(--font);
+  animation: show-email 600ms ease forwards;
+  animation-delay: 2s;
+}
+
+@keyframes show-email {
+  from {
+    opacity: 0;
+    right: -200px;
+  }
+  to {
+    opacity: 1;
+    right: -130px;
+  }
 }
 
 .email-text {
@@ -30,7 +44,8 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .email-fixed-dark, .email-fixed-light {
+  .email-fixed-dark,
+  .email-fixed-light {
     display: none;
   }
 }
