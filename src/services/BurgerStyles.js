@@ -24,7 +24,9 @@ export default {
     top: '0',
   },
   bmMenu: {
-    background: '#373a47',
+    backgroundImage: 'var(--bg-gradient)',
+    // eslint-disable-next-line no-dupe-keys
+    backgroundImage: 'var(--bg-image)',
     padding: '2.5em 1.5em 0',
     fontSize: '1.19em',
   },
