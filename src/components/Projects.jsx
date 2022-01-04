@@ -3,7 +3,6 @@ import React, {
 } from 'react';
 import Aos from 'aos';
 import PortfolioContext from '../context/PortfolioContext';
-import ScrollIndicator from './ScrollIndicator';
 import Loading from './Loading';
 import '../styles/Projects.css';
 import 'aos/dist/aos.css';
@@ -40,7 +39,6 @@ export default function Projects() {
         </Suspense>
       </div>
       <span className="html-tag">{'</section>'}</span>
-      <ScrollIndicator />
     </section>
   );
 }
