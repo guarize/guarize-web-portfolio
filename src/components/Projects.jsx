@@ -23,11 +23,13 @@ export default function Projects() {
     >
       <div className="projects-title">
         <div>
-          <span data-aos="fade-right" className="html-tag">
+          <span data-aos="fade-right" data-aos-once className="html-tag">
             {'<h2>'}
           </span>
-          <h2 data-aos="flip-up">Portfolio</h2>
-          <span data-aos="fade-left" className="html-tag">
+          <h2 data-aos="flip-up" data-aos-once>
+            Portfolio
+          </h2>
+          <span data-aos="fade-left" data-aos-once className="html-tag">
             {'</h2>'}
           </span>
         </div>

@@ -25,23 +25,24 @@ function MyToolbox() {
     >
       <section className="toolbox-title">
         <div>
-          <span data-aos="fade-right" className="html-tag">
+          <span data-aos="fade-right" data-aos-once className="html-tag">
             {'<h2>'}
           </span>
-          <h2 data-aos="flip-up">My Toolbox</h2>
-          <span data-aos="fade-left" className="html-tag">
+          <h2 data-aos="flip-up" data-aos-once>My Toolbox</h2>
+          <span data-aos="fade-left" data-aos-once className="html-tag">
             {'</h2>'}
           </span>
         </div>
         <div>
-          <span data-aos="fade-down" className="html-tag html-trigger">
+          <span data-aos="fade-down" data-aos-once className="html-tag html-trigger">
             {'<p>'}
           </span>
-          <p data-aos="flip-up">
+          <p data-aos="flip-up" data-aos-once>
             The skills, tools and technologies I use to bring projects to life:
           </p>
           <span
             data-aos="fade-up"
+            data-aos-once
             data-aos-anchor=".html-trigger"
             className="html-tag"
           >
