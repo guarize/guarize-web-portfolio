@@ -24,9 +24,11 @@ export default {
     top: '0',
   },
   bmMenu: {
-    backgroundImage: 'var(--bg-gradient)',
-    // eslint-disable-next-line no-dupe-keys
-    backgroundImage: 'var(--bg-image)',
+    background: 'rgb(136, 68, 238, 0.4)',
+    borderRadius: '16px',
+    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.2)',
+    backdropFilter: 'blur(5px)',
+    border: '1px solid rgba(0, 0, 0, 0.3)',
     padding: '2.5em 1.5em 0',
     fontSize: '1.19em',
   },
