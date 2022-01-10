@@ -14,11 +14,11 @@
   animation-delay: 2s;
 }
 
-.email-fixed-dark {
+.email-fixed-dark .email-text {
   color: #fefefe;
 }
 
-.email-fixed-light {
+.email-fixed-light .email-text {
   color: #212121;
 }
 
@@ -37,7 +37,8 @@
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   transition: all 0.2s ease-in-out;
-  cursor: copy;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .email-text:hover {

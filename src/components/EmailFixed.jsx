@@ -7,7 +7,14 @@ export default function EmailFixed() {
 
   return (
     <div className={darkMode ? 'email-fixed-dark' : 'email-fixed-light'}>
-      <p className="email-text">pedroguarize@hotmail.com</p>
+      <a
+        href="mailto:pedroguarize@hotmail.com"
+        rel="noopener noreferrer"
+        target="_blank"
+        className="email-text"
+      >
+        pedroguarize@hotmail.com
+      </a>
       <hr className="email-fixed-line" />
     </div>
   );
