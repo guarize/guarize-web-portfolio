@@ -4,8 +4,18 @@ import topTrumpsImg from '../assets/projects/tryunfo-preview2.png';
 import flexblogImg from '../assets/projects/flexblog.png';
 import expensesManagerImg from '../assets/projects/expenses-manager-login.png';
 import todoListImg from '../assets/projects/todo-list-guarize.png';
+import kryptoTransfersImg from '../assets/projects/krypto-transfers_ pedro-guarize.png';
 
 const portfolio = [
+  {
+    name: 'Web 3.0 Transfers',
+    image: kryptoTransfersImg,
+    description:
+      'My absolute favorite project so far. A Web 3.0 Transfer App, an application that makes it possible to transfer Ethereum to anyone in the world through the Ethereum Network.',
+    tools: ['React', 'Solidity', 'Tailwind'],
+    liveProject: 'https://krypto-transfers.vercel.app/',
+    githubCode: 'https://github.com/guarize/web3.0-transfers',
+  },
   {
     name: 'Music App',
     image: musicAppImg,
