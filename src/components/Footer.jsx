@@ -19,9 +19,8 @@ export default function Footer() {
       <span className="html-tag">{'<footer>'}</span>
       <div className="footer-container">
         <h2 className="footer-text">Get In Touch</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur,
-          expedita. Sed, temporibus explicabo expedita corrupti non deleniti.
+        <p className="footer-description">
+          Living, learning & leveling up one day at a time.
         </p>
         <a
           className="footer-email"
