@@ -23,7 +23,7 @@ const portfolio = [
     description:
       'In this project I developed a recipes app, using the latest in the React ecosystem: Hooks and Context API!',
     tools: ['React', 'CSS', 'Hooks'],
-    liveProject: 'https://recipes-app-blush.vercel.app/',
+    liveProject: 'https://recipes-app-one-sigma.vercel.app/',
     githubCode: 'https://github.com/guarize/recipes-app',
   },
   {
