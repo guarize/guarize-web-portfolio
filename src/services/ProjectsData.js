@@ -5,6 +5,7 @@ import flexblogImg from '../assets/projects/flexblog.png';
 import expensesManagerImg from '../assets/projects/expenses-manager-login.png';
 import todoListImg from '../assets/projects/todo-list-guarize.png';
 import kryptoTransfersImg from '../assets/projects/krypto-transfers_ pedro-guarize.png';
+import recipeAppImg from '../assets/projects/smartmockups_kyd2qtqr.jpg';
 
 const portfolio = [
   {
@@ -15,6 +16,15 @@ const portfolio = [
     tools: ['React', 'Solidity', 'Tailwind'],
     liveProject: 'https://krypto-transfers.vercel.app/',
     githubCode: 'https://github.com/guarize/web3.0-transfers',
+  },
+  {
+    name: 'Recipes App',
+    image: recipeAppImg,
+    description:
+      'In this project I developed a recipes app, using the latest in the React ecosystem: Hooks and Context API!',
+    tools: ['React', 'CSS', 'Hooks'],
+    liveProject: 'https://recipes-app-blush.vercel.app/',
+    githubCode: 'https://github.com/guarize/recipes-app',
   },
   {
     name: 'Music App',
