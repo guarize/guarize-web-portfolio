@@ -7,6 +7,7 @@ import {
   SiJest,
   SiBootstrap,
   SiRedux,
+  SiTailwindcss,
 } from 'react-icons/si';
 import Aos from 'aos';
 import rtlLogo from '../assets/images/testing-library.svg';
@@ -62,6 +63,12 @@ export default function FrontEndTools() {
             <SiBootstrap />
           </div>
           <span>Bootstrap</span>
+        </li>
+        <li data-aos="fade-up" data-aos-once data-aos-delay="700">
+          <div>
+            <SiTailwindcss />
+          </div>
+          <span>Tailwind</span>
         </li>
         <li data-aos="fade-up" data-aos-once data-aos-delay="800">
           <div>
