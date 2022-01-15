@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import Header from './Header';
 import ScrollIndicator from './ScrollIndicator';
 import PortfolioContext from '../context/PortfolioContext';
-import HomeAvatar from './HomeAvatar';
+// import HomeAvatar from './HomeAvatar';
+import BackgroundAnimation from './BackgroundAnimation';
 import '../styles/HomeSection.css';
 
 export default function HomeSection() {
@@ -53,7 +54,7 @@ export default function HomeSection() {
           </p>
           <span className="html-tag">{'</section>'}</span>
         </div>
-        <HomeAvatar />
+        <BackgroundAnimation />
       </section>
       <ScrollIndicator />
     </section>

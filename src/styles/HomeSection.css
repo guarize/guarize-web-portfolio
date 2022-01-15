@@ -130,7 +130,16 @@
   transform: translateY(0px);
 }
 
+.bganimation {
+  width: 500px;
+}
+
 @media only screen and (max-width: 1680px) {
+
+  .bganimation {
+    margin-top: 60px;
+  }
+
   .home-container {
     margin: 20px auto -30px auto;
     width: 78%;
@@ -181,6 +190,10 @@
 
 @media only screen and (max-width: 1050px) {
   .home-avatar {
+    display: none;
+  }
+
+  .bganimation {
     display: none;
   }
 
