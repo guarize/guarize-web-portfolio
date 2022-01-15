@@ -17,11 +17,11 @@
 }
 
 .socials-fixed-dark .socials-icons a {
-  color: #fefefe;
+  color: var(--main-white);
 }
 
 .socials-fixed-dark .socials-fixed-line {
-  background-color: #fefefe;
+  background-color: var(--main-white);
 }
 
 .socials-fixed-light .socials-icons a {
@@ -68,7 +68,7 @@
   height: 1px;
   transform: rotate(90deg);
   text-align: center;
-  background-color: #fefefe;
+  background-color: var(--main-white);
 }
 
 @media only screen and (max-width: 1250px) {

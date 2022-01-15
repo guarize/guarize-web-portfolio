@@ -15,7 +15,7 @@
 }
 
 .email-fixed-dark .email-text {
-  color: #fefefe;
+  color: var(--main-white);
 }
 
 .email-fixed-light .email-text {

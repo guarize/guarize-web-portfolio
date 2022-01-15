@@ -46,18 +46,18 @@
 }
 
 .header-wrapper-dark {
-  background-color: #1d1d1d;
-  color: #fefefe;
+  background-color: var(--main-black);
+  color: var(--main-white);
 }
 
 .header-wrapper-light {
   background-image: var(--bg-gradient);
   background-image: var(--bg-image);
-  color: #fefefe;
+  color: var(--main-white);
 }
 
 .header-wrapper-light span {
-  color: #fefefe;
+  color: var(--main-white);
 }
 
 .header-container {
@@ -90,7 +90,7 @@
   cursor: pointer;
   position: relative;
   text-decoration: none;
-  color: #fefefe;
+  color: var(--main-white);
   margin-right: 15px;
   display: flex;
   align-items: center;

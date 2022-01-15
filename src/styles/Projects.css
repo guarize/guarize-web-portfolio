@@ -10,13 +10,13 @@
 }
 
 .projects-wrapper-dark {
-  background-color: #1d1d1d;
-  color: #fefefe;
+  background-color: var(--main-black);
+  color: var(--main-white);
 }
 
 .projects-wrapper-light {
-  background-color: #fefefe;
-  color: #1d1d1d;
+  background-color: var(--main-white);
+  color: var(--main-black);
 }
 
 .projects-title {

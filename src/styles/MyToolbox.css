@@ -11,12 +11,12 @@
 
 .toolbox-wrapper-dark {
   background-color: #181818;
-  color: #fefefe;
+  color: var(--main-white);
 }
 
 .toolbox-wrapper-light {
   background-color: #eee;
-  color: #1d1d1d;
+  color: var(--main-black);
 }
 
 .toolbox-wrapper-light li {
@@ -85,7 +85,7 @@
   border-radius: 10px;
   background-color: #251f2d;
   border: 2px solid #3b2b51;
-  color: #fefefe;
+  color: var(--main-white);
   margin: 30px;
   transition: all 0.4s ease-in-out;
 }
