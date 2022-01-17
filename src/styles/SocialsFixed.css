@@ -13,7 +13,7 @@
   bottom: -80px;
   font-family: var(--font);
   animation: show-socials 600ms ease forwards;
-  animation-delay: 2s;
+  animation-delay: 1.8s;
 }
 
 .socials-fixed-dark .socials-icons a {
