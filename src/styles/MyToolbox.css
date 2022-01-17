@@ -82,9 +82,9 @@
   flex-direction: column;
   width: 9rem;
   height: 9rem;
-  border-radius: 10px;
-  background-color: #251f2d;
-  border: 2px solid #3b2b51;
+  border-radius: 5px;
+  background-color: #212121;
+  border-bottom: 2px solid #3b2b51;
   color: var(--main-white);
   margin: 30px;
   transition: all 0.4s ease-in-out;
@@ -154,6 +154,14 @@
 }
 
 @media only screen and (max-width: 481px) {
+  .languages-container li div {
+    font-size: 2rem;
+  }
+
+  .languages-container li img {
+    width: 2rem;
+  }
+
   .toolbox-title h2 {
     font-size: 2.3rem;
   }
