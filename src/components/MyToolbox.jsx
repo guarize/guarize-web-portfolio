@@ -3,7 +3,6 @@ import React, {
 } from 'react';
 import Aos from 'aos';
 import '../styles/MyToolbox.css';
-import ScrollIndicator from './ScrollIndicator';
 import PortfolioContext from '../context/PortfolioContext';
 import Loading from './Loading';
 import 'aos/dist/aos.css';
@@ -60,7 +59,6 @@ function MyToolbox() {
         </Suspense>
         <span className="html-tag">{'</section>'}</span>
       </section>
-      <ScrollIndicator />
     </section>
   );
 }
