@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 export { default as BackgroundAnimation } from './BackgroundAnimation';
 export { default as EmailFixed } from './EmailFixed';
 export { default as Footer } from './Footer';
