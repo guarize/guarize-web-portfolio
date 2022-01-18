@@ -96,10 +96,6 @@
   align-items: center;
 }
 
-.header-menu a span {
-  margin-left: 15px;
-}
-
 .header-menu a:hover {
   color: #c495fd;
 }
@@ -116,7 +112,7 @@
   right: -20px;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1015px) {
   .header-logo {
     width: 90px;
   }
@@ -131,11 +127,12 @@
   .header-menu a,
   .header-socials a {
     font-size: 1.2rem;
-    margin: 0 0 15px 0;
+    margin: 0 0 30px 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
   }
 
-  .header-socials a span {
-    margin-left: 10px;
+  .header-menu a svg {
+    margin-right: 10px;
   }
 
   .header-socials {
@@ -151,10 +148,6 @@
     justify-content: space-between;
     align-items: center;
     width: 90%;
-  }
-
-  .header-container span {
-    margin: 0;
   }
 
   .header-logo {
