@@ -6,7 +6,7 @@ export { default as FrontEndTools } from './FrontEndTools';
 export { default as GeneralTools } from './GeneralTools';
 export { default as Header } from './Header';
 export { default as HomeAvatar } from './HomeAvatar';
-export { default as HomeSection } from './HomeSection';
+export { default as HeroSection } from './HeroSection';
 export { default as LightDarkButton } from './LightDarkButton';
 export { default as Loading } from './Loading';
 export { default as MyToolbox } from './MyToolbox';

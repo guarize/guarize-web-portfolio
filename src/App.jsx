@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   MyToolbox,
-  HomeSection,
+  HeroSection,
   Projects,
   EmailFixed,
   SocialsFixed,
@@ -15,7 +15,7 @@ export default function App() {
     <PortfolioProvider>
       <SocialsFixed />
       <EmailFixed />
-      <HomeSection />
+      <HeroSection />
       <MyToolbox />
       <Projects />
       <Footer />

@@ -194,7 +194,8 @@
   }
 
   .bganimation {
-    display: none;
+    position: absolute;
+    width: 300px;
   }
 
   .home-container {

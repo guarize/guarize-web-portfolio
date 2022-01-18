@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { Header, ScrollIndicator, BackgroundAnimation } from '.';
 import PortfolioContext from '../context/PortfolioContext';
-import '../styles/HomeSection.css';
+import '../styles/HeroSection.css';
 
-export default function HomeSection() {
+export default function HeroSection() {
   const { darkMode } = useContext(PortfolioContext);
 
   const createHomeIntro = () => {
