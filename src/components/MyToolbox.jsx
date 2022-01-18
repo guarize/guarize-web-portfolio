@@ -2,10 +2,10 @@ import React, {
   useContext, useEffect, lazy, Suspense,
 } from 'react';
 import Aos from 'aos';
-import '../styles/MyToolbox.css';
 import PortfolioContext from '../context/PortfolioContext';
-import Loading from './Loading';
+import { Loading } from '.';
 import 'aos/dist/aos.css';
+import '../styles/MyToolbox.css';
 
 function MyToolbox() {
   useEffect(() => {
@@ -27,13 +27,19 @@ function MyToolbox() {
           <span data-aos="fade-right" data-aos-once className="html-tag">
             {'<h2>'}
           </span>
-          <h2 data-aos="flip-up" data-aos-once>My Toolbox</h2>
+          <h2 data-aos="flip-up" data-aos-once>
+            My Toolbox
+          </h2>
           <span data-aos="fade-left" data-aos-once className="html-tag">
             {'</h2>'}
           </span>
         </div>
         <div>
-          <span data-aos="fade-down" data-aos-once className="html-tag html-trigger">
+          <span
+            data-aos="fade-down"
+            data-aos-once
+            className="html-tag html-trigger"
+          >
             {'<p>'}
           </span>
           <p data-aos="flip-up" data-aos-once>

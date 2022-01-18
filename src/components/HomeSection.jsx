@@ -1,9 +1,6 @@
 import React, { useContext } from 'react';
-import Header from './Header';
-import ScrollIndicator from './ScrollIndicator';
+import { Header, ScrollIndicator, BackgroundAnimation } from '.';
 import PortfolioContext from '../context/PortfolioContext';
-// import HomeAvatar from './HomeAvatar';
-import BackgroundAnimation from './BackgroundAnimation';
 import '../styles/HomeSection.css';
 
 export default function HomeSection() {
@@ -46,7 +43,9 @@ export default function HomeSection() {
           <p className="home-role">Front-End Developer</p>
           <div className="home-intro-container">
             <span className="html-tag">{'<h1>'}</span>
-            <h1 className="home-intro" aria-label="Hey! I'm Pedro Guarize.">{createHomeIntro()}</h1>
+            <h1 className="home-intro" aria-label="Hey! I'm Pedro Guarize.">
+              {createHomeIntro()}
+            </h1>
             <span className="html-tag">{'</h1>'}</span>
           </div>
           <p className="home-description">

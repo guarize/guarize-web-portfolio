@@ -4,10 +4,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import { useMediaQuery } from 'react-responsive';
-import LightDarkButton from './LightDarkButton';
+import { Navbar, LightDarkButton } from '.';
 import headerLogo from '../assets/images/pg-logo.png';
 import PortfolioContext from '../context/PortfolioContext';
-import NavBar from './NavBar';
 import '../styles/Header.css';
 
 export default function Header() {
@@ -49,8 +48,7 @@ export default function Header() {
     <header
       className={darkMode ? 'header-wrapper-dark' : 'header-wrapper-light'}
       style={{
-        animation:
-        isScreenMedium
+        animation: isScreenMedium
           ? 'none'
           : scrollDir
             ? 'fadeIn 1s forwards'
@@ -66,7 +64,7 @@ export default function Header() {
           style={{ cursor: 'pointer' }}
           onClick={() => scroll.scrollTo(0, { duration: '0', delay: '0', smooth: 'true' })}
         />
-        <NavBar />
+        <Navbar />
         <LightDarkButton />
         <span className="html-tag">{'</header>'}</span>
       </section>

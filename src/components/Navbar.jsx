@@ -7,7 +7,7 @@ import { FaLaptopCode } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import burgerStyles from '../services/BurgerStyles';
 
-export default function NavBar() {
+export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const isScreenMedium = useMediaQuery({ query: '(max-width: 1015px)' });
