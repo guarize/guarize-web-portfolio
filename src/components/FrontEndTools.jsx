@@ -48,33 +48,33 @@ export default function FrontEndTools() {
         </li>
         <li data-aos="fade-up" data-aos-once data-aos-delay="500">
           <div>
+            <SiRedux />
+          </div>
+          <span>Redux</span>
+        </li>
+        <li data-aos="fade-up" data-aos-once data-aos-delay="600">
+          <div>
             <SiJest />
           </div>
           <span>Jest</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="600">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="700">
           <div>
             <img src={rtlLogo} alt="rtl logo" />
           </div>
           <span>Testing Library</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="700">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="800">
           <div>
             <SiBootstrap />
           </div>
           <span>Bootstrap</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="700">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="900">
           <div>
             <SiTailwindcss />
           </div>
           <span>Tailwind</span>
-        </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="800">
-          <div>
-            <SiRedux />
-          </div>
-          <span>Redux</span>
         </li>
       </ul>
     </div>
