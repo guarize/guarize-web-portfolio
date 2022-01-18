@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
+import { useMediaQuery } from 'react-responsive';
 import Aos from 'aos';
 import portfolio from '../services/ProjectsData';
 import 'aos/dist/aos.css';
@@ -8,6 +9,8 @@ export default function ProjectCard() {
   useEffect(() => {
     Aos.init({ duration: 800 });
   }, []);
+
+  const isDesktop = useMediaQuery({ query: '(min-width: 1250px)' });
 
   return (
     <>
@@ -23,7 +26,7 @@ export default function ProjectCard() {
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-anchor={
-              index === 0 ? undefined : `.card-trigger-${index - 1}`
+              index === 0 || isDesktop ? undefined : `.card-trigger-${index - 1}`
             }
             data-aos-anchor-placement="top-center"
             key={index}
