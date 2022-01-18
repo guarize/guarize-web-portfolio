@@ -23,12 +23,12 @@ export default function ProjectCard() {
         ) => (
           <div
             className={`project-card card-trigger-${index}`}
-            data-aos="fade-up"
+            data-aos="zoom-in"
             data-aos-once="true"
             data-aos-anchor={
               index === 0 || isDesktop ? undefined : `.card-trigger-${index - 1}`
             }
-            data-aos-anchor-placement="top-center"
+            data-aos-anchor-placement="top-bottom"
             key={index}
           >
             <img src={image} alt={name} className="project-preview" />
