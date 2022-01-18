@@ -3,9 +3,9 @@ import React, {
 } from 'react';
 import Aos from 'aos';
 import PortfolioContext from '../context/PortfolioContext';
-import Loading from './Loading';
-import '../styles/Projects.css';
+import { Loading } from '.';
 import 'aos/dist/aos.css';
+import '../styles/Projects.css';
 
 export default function Projects() {
   useEffect(() => {
