@@ -4,6 +4,7 @@
   color: #9b30f9;
   position: absolute;
   bottom: 0;
+  cursor: pointer;
 }
 
 .m_scroll_arrows {
