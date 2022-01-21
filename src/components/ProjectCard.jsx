@@ -24,7 +24,7 @@ export default function ProjectCard() {
           <div
             className={`project-card card-trigger-${index}`}
             data-aos="zoom-in"
-            data-aos-once="true"
+            data-aos-once
             data-aos-anchor={
               index === 0 || isDesktop ? undefined : `.card-trigger-${index - 1}`
             }
