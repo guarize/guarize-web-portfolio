@@ -16,6 +16,8 @@ export default function Projects() {
 
   const ProjectCard = lazy(() => import('./ProjectCard'));
 
+  const FeaturedProjects = lazy(() => import('./FeaturedProjects'));
+
   return (
     <section
       className={darkMode ? 'projects-wrapper-dark' : 'projects-wrapper-light'}
@@ -35,6 +37,9 @@ export default function Projects() {
         </div>
       </div>
       <span className="html-tag">{'<section>'}</span>
+      <Suspense fallback={<Loading />}>
+        <FeaturedProjects />
+      </Suspense>
       <div className="projects-container">
         <Suspense fallback={<Loading />}>
           <ProjectCard />
