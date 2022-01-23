@@ -35,6 +35,19 @@
   text-align: center;
 }
 
+.projects-notheworthy-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0 3rem 0;
+}
+
+.projects-notheworthy-heading h3 {
+  font-size: 32px;
+  line-height: 20px;
+  margin: 0 1.2rem;
+}
+
 .projects-container {
   display: flex;
   align-items: center;

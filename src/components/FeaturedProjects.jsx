@@ -21,36 +21,40 @@ function FeaturedProjects() {
                 className={
                   index % 2 === 0 ? 'feat-project-right' : 'feat-project-left'
                 }
+                data-aos={
+                  index % 2 === 0 ? 'flip-right' : 'flip-left'
+                }
+                data-aos-once
               >
                 <div className="feat-project-preview">
                   <img src={image} alt="project preview" />
                 </div>
                 <div
                   className={
-                    index % 2 === 0
-                      ? 'project-content-right'
-                      : 'project-content-left'
-                  }
+                      index % 2 === 0
+                        ? 'project-content-right'
+                        : 'project-content-left'
+                    }
                 >
-                  <div>
+                  <div style={{ marginTop: '-30px', minWidth: '470px' }}>
                     <p className="feat-tag">Featured Project</p>
                     <h3>{name}</h3>
                     <div
                       className={
-                        index % 2 === 0
-                          ? 'project-description-right'
-                          : 'project-description-left'
-                      }
+                          index % 2 === 0
+                            ? 'project-description-right'
+                            : 'project-description-left'
+                        }
                     >
                       <p>{description}</p>
                     </div>
-                    <div className="feat-tools-links">
+                    <section className="feat-tools-links">
                       <ul className="feat-project-tools">
                         {tools.map((tool) => (
                           <li key={tool}>{tool}</li>
                         ))}
                       </ul>
-                      <div className="feat-project-links">
+                      <section className="feat-project-links">
                         <a
                           href={githubCode}
                           aria-label="GitHub Link"
@@ -67,8 +71,8 @@ function FeaturedProjects() {
                         >
                           <HiOutlineExternalLink />
                         </a>
-                      </div>
-                    </div>
+                      </section>
+                    </section>
                   </div>
                 </div>
               </li>

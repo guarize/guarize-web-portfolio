@@ -40,6 +40,17 @@ export default function Projects() {
       <Suspense fallback={<Loading />}>
         <FeaturedProjects />
       </Suspense>
+      <div className="projects-notheworthy-heading">
+        <span data-aos="fade-right" data-aos-once className="html-tag">
+          {'<h3>'}
+        </span>
+        <h3 data-aos="flip-up" data-aos-once>
+          Other Noteworthy Projects
+        </h3>
+        <span data-aos="fade-left" data-aos-once className="html-tag">
+          {'</h3>'}
+        </span>
+      </div>
       <div className="projects-container">
         <Suspense fallback={<Loading />}>
           <ProjectCard />

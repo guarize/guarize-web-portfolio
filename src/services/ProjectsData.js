@@ -6,6 +6,7 @@ import expensesManagerImg from '../assets/projects/expenses-manager-login.png';
 import todoListImg from '../assets/projects/todo-list-guarize.png';
 import kryptoTransfersImg from '../assets/projects/krypto-transfers_ pedro-guarize.png';
 import recipeAppImg from '../assets/projects/smartmockups_kyd2qtqr.jpg';
+import modernUIUX from '../assets/projects/modern-ui-ux-gpt-3.vercel.app_ (2).png';
 
 const portfolio = [
   {
@@ -16,6 +17,15 @@ const portfolio = [
     tools: ['React', 'Solidity', 'Tailwind'],
     liveProject: 'https://krypto-transfers.vercel.app/',
     githubCode: 'https://github.com/guarize/web3.0-transfers',
+  },
+  {
+    name: 'Modern UI/UX - GPT-3',
+    image: modernUIUX,
+    description:
+      'The focus of this project was to practice and improve my CSS skills. Stepping out of my comfort zone, I used SASS as preprocessor and based on a figma design to create this beautiful, modern and fully responsive website.',
+    tools: ['React', 'SASS'],
+    liveProject: 'https://modern-ui-ux-gpt-3.vercel.app/',
+    githubCode: 'https://github.com/guarize/modern-UI-UX-gpt-3',
   },
   {
     name: 'Recipes App',

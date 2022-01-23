@@ -14,7 +14,7 @@ export default function ProjectCard() {
 
   return (
     <>
-      {portfolio.map(
+      {portfolio.slice(2, portfolio.length).map(
         (
           {
             name, image, description, tools, liveProject, githubCode,
