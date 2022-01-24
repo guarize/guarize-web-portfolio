@@ -208,6 +208,12 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .project-card {
+    margin: 20px 20px 30px 20px;
+  }
+}
+
 @media only screen and (max-width: 1015px) {
   .project-card {
     zoom: 0.75;
