@@ -34,6 +34,7 @@
 
 .socials-icons a {
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .socials-icons {
