@@ -16,31 +16,31 @@ export default function GeneralTools() {
           </div>
           <span>VS Code</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="200">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="150">
           <div>
             <SiGit />
           </div>
           <span>Git</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="300">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="200">
           <div>
             <SiGithub />
           </div>
           <span>Github</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="400">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="250">
           <div>
             <SiTrello />
           </div>
           <span>Trello</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="500">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="300">
           <div>
             <FaTerminal />
           </div>
           <span>Command Line</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="600">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="350">
           <div>
             <RiDeviceLine />
           </div>

@@ -17,6 +17,7 @@ export default {
   },
   bmCross: {
     background: '#bdc3c7',
+    zoom: '1.3',
   },
   bmMenuWrap: {
     position: 'fixed',

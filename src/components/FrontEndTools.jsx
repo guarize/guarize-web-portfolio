@@ -22,49 +22,49 @@ export default function FrontEndTools() {
           </div>
           <span>JavaScript</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="200">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="150">
           <div>
             <SiHtml5 />
           </div>
           <span>HTML5</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="300">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="200">
           <div>
             <SiCss3 />
           </div>
           <span>CSS3</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="400">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="250">
           <div>
             <SiReact />
           </div>
           <span>React.js</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="500">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="300">
           <div>
             <SiRedux />
           </div>
           <span>Redux</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="600">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="350">
           <div>
             <SiJest />
           </div>
           <span>Jest</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="700">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="400">
           <div>
             <img src={rtlLogo} alt="rtl logo" />
           </div>
           <span>RTL</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="800">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="450">
           <div>
             <FaSass />
           </div>
           <span>Sass</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="800">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="500">
           <div>
             <SiTailwindcss />
           </div>
