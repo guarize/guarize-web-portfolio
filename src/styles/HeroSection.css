@@ -170,7 +170,7 @@
   }
 
   .home-container {
-    margin: 20px auto -30px auto;
+    margin: 70px auto -30px auto;
     width: 78%;
     height: 600px;
   }
@@ -222,11 +222,6 @@
     display: none;
   }
 
-  .bganimation {
-    position: absolute;
-    width: 300px;
-  }
-
   .home-container {
     margin: 40px auto 0 25px;
     width: 90%;
@@ -246,5 +241,14 @@
   .home-description {
     max-width: 100%;
     font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .bganimation {
+    flex: 1;
+    position: absolute;
+    margin-top: 180px;
+    width: 300px;
   }
 }
