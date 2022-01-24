@@ -53,7 +53,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   width: 90%;
 }
 
@@ -184,6 +184,24 @@
   margin-left: 10px;
 }
 
+.show-more-button {
+  color: #9b30f9;
+  background-color: transparent;
+  border: 1px solid #9b30f9;
+  border-radius: 5px;
+  padding: 1.25rem 1.75rem;
+  line-height: 1;
+  text-decoration: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 0 0 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 50px;
+}
+
 @media only screen and (max-width: 1366px) {
   .project-card {
     zoom: 0.9;
@@ -215,7 +233,7 @@
   }
 
   .projects-container {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   .project-card {

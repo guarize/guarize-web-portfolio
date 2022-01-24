@@ -31,6 +31,13 @@
 
 .feat-project-preview {
   max-width: 40rem;
+  opacity: 0.4;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.feat-project-preview:hover {
+  opacity: 0.9;
 }
 
 .feat-project-preview img {

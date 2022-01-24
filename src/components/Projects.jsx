@@ -1,15 +1,17 @@
-import React, {
-  useContext, lazy, Suspense,
-} from 'react';
+import React, { useContext, lazy, Suspense } from 'react';
 import PortfolioContext from '../context/PortfolioContext';
 import { Loading } from '.';
+import portfolio from '../services/ProjectsData';
 import '../styles/Projects.css';
 
 export default function Projects() {
-  const { darkMode } = useContext(PortfolioContext);
+  const {
+    darkMode,
+    seeMoreProjects: { seeMore },
+    setSeeMoreProjects,
+  } = useContext(PortfolioContext);
 
   const ProjectCard = lazy(() => import('./ProjectCard'));
-
   const FeaturedProjects = lazy(() => import('./FeaturedProjects'));
 
   return (
@@ -50,6 +52,23 @@ export default function Projects() {
           <ProjectCard />
         </Suspense>
       </div>
+      {seeMore ? (
+        <button
+          type="button"
+          className="show-more-button"
+          onClick={() => setSeeMoreProjects({ seeMore: false, projectsAmount: 6 })}
+        >
+          Show Less
+        </button>
+      ) : (
+        <button
+          type="button"
+          className="show-more-button"
+          onClick={() => setSeeMoreProjects({ seeMore: true, projectsAmount: portfolio.length })}
+        >
+          Show More
+        </button>
+      )}
       <span className="html-tag">{'</section>'}</span>
     </section>
   );

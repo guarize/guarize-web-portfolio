@@ -1,18 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { VscGithubAlt } from 'react-icons/vsc';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import { useMediaQuery } from 'react-responsive';
+import PortfolioContext from '../context/PortfolioContext';
 import portfolio from '../services/ProjectsData';
 import '../styles/FeaturedProjects.css';
 
 function FeaturedProjects() {
+  const { featuredProjects } = useContext(PortfolioContext);
+
   const isScreenMedium = useMediaQuery({ query: '(max-width: 950px)' });
 
   return (
     <section>
       <ul className="featured-projects">
         {portfolio
-          .slice(0, 3)
+          .slice(0, featuredProjects)
           .map(
             (
               {
@@ -20,7 +23,11 @@ function FeaturedProjects() {
               },
               index,
             ) => (isScreenMedium ? (
-              <div className="medium-featured-project" data-aos="flip-down" data-aos-once>
+              <div
+                className="medium-featured-project"
+                data-aos="flip-down"
+                data-aos-once
+              >
                 <div style={{ position: 'relative' }}>
                   <img src={image} alt="project preview" />
                   <div className="medium-featured-project-content">
@@ -61,10 +68,13 @@ function FeaturedProjects() {
                     index % 2 === 0 ? 'feat-project-right' : 'feat-project-left'
                   }
                 data-aos={index % 2 === 0 ? 'flip-right' : 'flip-left'}
+                data-aos-duration="1000"
                 data-aos-once
               >
                 <div className="feat-project-preview">
-                  <img src={image} alt="project preview" />
+                  <a href={liveProject} target="_blank" rel="noopener noreferrer">
+                    <img src={image} alt="project preview" />
+                  </a>
                 </div>
                 <div
                   className={

@@ -4,7 +4,11 @@ import PortfolioContext from '../context/PortfolioContext';
 
 export default function PortfolioProvider({ children }) {
   const [darkMode, setDarkMode] = useState(true);
-  const [featuredProjects, setFeaturedProjects] = useState(3);
+  const [featuredProjects, setFeaturedProjects] = useState(2);
+  const [seeMoreProjects, setSeeMoreProjects] = useState({
+    seeMore: false,
+    projectsAmount: 6,
+  });
 
   // eslint-disable-next-line react/jsx-no-constructed-context-values
   const CONTEXT_VALUE = {
@@ -12,6 +16,8 @@ export default function PortfolioProvider({ children }) {
     setDarkMode,
     featuredProjects,
     setFeaturedProjects,
+    seeMoreProjects,
+    setSeeMoreProjects,
   };
 
   return (

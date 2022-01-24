@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import { useMediaQuery } from 'react-responsive';
+import PortfolioContext from '../context/PortfolioContext';
 import portfolio from '../services/ProjectsData';
 
 export default function ProjectCard() {
+  const { featuredProjects, seeMoreProjects: { projectsAmount } } = useContext(PortfolioContext);
+
   const isDesktop = useMediaQuery({ query: '(min-width: 1250px)' });
 
   return (
     <>
-      {portfolio.slice(3, portfolio.length).map(
+      {portfolio.slice(featuredProjects, projectsAmount).map(
         (
           {
             name, image, description, tools, liveProject, githubCode,
