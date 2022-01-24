@@ -1,20 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import { useMediaQuery } from 'react-responsive';
-import Aos from 'aos';
 import portfolio from '../services/ProjectsData';
-import 'aos/dist/aos.css';
 
 export default function ProjectCard() {
-  useEffect(() => {
-    Aos.init({ duration: 800 });
-  }, []);
-
   const isDesktop = useMediaQuery({ query: '(min-width: 1250px)' });
 
   return (
     <>
-      {portfolio.slice(2, portfolio.length).map(
+      {portfolio.slice(3, portfolio.length).map(
         (
           {
             name, image, description, tools, liveProject, githubCode,

@@ -1,17 +1,11 @@
-import React, { useEffect } from 'react';
-import Aos from 'aos';
+import React from 'react';
 import {
   SiVisualstudiocode, SiGit, SiGithub, SiTrello,
 } from 'react-icons/si';
 import { FaTerminal } from 'react-icons/fa';
 import { RiDeviceLine } from 'react-icons/ri';
-import 'aos/dist/aos.css';
 
 export default function GeneralTools() {
-  useEffect(() => {
-    Aos.init({ duration: 500 });
-  }, []);
-
   return (
     <div className="general-container">
       <p data-aos="flip-up" data-aos-once>General</p>

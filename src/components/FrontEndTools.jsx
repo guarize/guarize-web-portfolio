@@ -1,23 +1,17 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
   SiJavascript,
   SiHtml5,
   SiCss3,
   SiReact,
   SiJest,
-  SiBootstrap,
   SiRedux,
   SiTailwindcss,
 } from 'react-icons/si';
-import Aos from 'aos';
+import { FaSass } from 'react-icons/fa';
 import rtlLogo from '../assets/images/testing-library.svg';
-import 'aos/dist/aos.css';
 
 export default function FrontEndTools() {
-  useEffect(() => {
-    Aos.init({ duration: 500 });
-  }, []);
-
   return (
     <div className="front-end-container">
       <p data-aos="flip-up" data-aos-once>Front-end</p>
@@ -62,15 +56,15 @@ export default function FrontEndTools() {
           <div>
             <img src={rtlLogo} alt="rtl logo" />
           </div>
-          <span>Testing Library</span>
+          <span>RTL</span>
         </li>
         <li data-aos="fade-up" data-aos-once data-aos-delay="800">
           <div>
-            <SiBootstrap />
+            <FaSass />
           </div>
-          <span>Bootstrap</span>
+          <span>Sass</span>
         </li>
-        <li data-aos="fade-up" data-aos-once data-aos-delay="900">
+        <li data-aos="fade-up" data-aos-once data-aos-delay="800">
           <div>
             <SiTailwindcss />
           </div>

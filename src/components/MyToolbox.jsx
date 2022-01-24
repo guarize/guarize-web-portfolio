@@ -1,17 +1,11 @@
 import React, {
-  useContext, useEffect, lazy, Suspense,
+  useContext, lazy, Suspense,
 } from 'react';
-import Aos from 'aos';
 import PortfolioContext from '../context/PortfolioContext';
 import { Loading } from '.';
-import 'aos/dist/aos.css';
 import '../styles/MyToolbox.css';
 
 function MyToolbox() {
-  useEffect(() => {
-    Aos.init({ duration: 500 });
-  }, []);
-
   const { darkMode } = useContext(PortfolioContext);
 
   const FrontEndTools = lazy(() => import('./FrontEndTools'));

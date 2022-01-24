@@ -50,6 +50,7 @@ export default function Footer() {
         )}
       </div>
       <span className="html-tag">{'</footer>'}</span>
+      <p className="footer-copyright">© 2022 Pedro Guarize. All rights reserved.</p>
     </footer>
   );
 }
