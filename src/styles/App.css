@@ -23,6 +23,7 @@ html {
   --main-black: #1d1d1d;
   --main-white: #fefefe;
   --main-blue: #0f1624;
+  --main-purple: #9b30f9;
 }
 
 html,
@@ -62,6 +63,10 @@ ul {
 
 li {
   margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 .html-tag {

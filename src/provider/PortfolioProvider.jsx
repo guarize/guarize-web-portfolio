@@ -4,11 +4,14 @@ import PortfolioContext from '../context/PortfolioContext';
 
 export default function PortfolioProvider({ children }) {
   const [darkMode, setDarkMode] = useState(true);
+  const [featuredProjects, setFeaturedProjects] = useState(3);
 
   // eslint-disable-next-line react/jsx-no-constructed-context-values
   const CONTEXT_VALUE = {
     darkMode,
     setDarkMode,
+    featuredProjects,
+    setFeaturedProjects,
   };
 
   return (

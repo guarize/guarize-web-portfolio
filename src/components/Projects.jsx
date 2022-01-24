@@ -1,20 +1,16 @@
 import React, {
-  useContext, useEffect, lazy, Suspense,
+  useContext, lazy, Suspense,
 } from 'react';
-import Aos from 'aos';
 import PortfolioContext from '../context/PortfolioContext';
 import { Loading } from '.';
-import 'aos/dist/aos.css';
 import '../styles/Projects.css';
 
 export default function Projects() {
-  useEffect(() => {
-    Aos.init({ duration: 500 });
-  }, []);
-
   const { darkMode } = useContext(PortfolioContext);
 
   const ProjectCard = lazy(() => import('./ProjectCard'));
+
+  const FeaturedProjects = lazy(() => import('./FeaturedProjects'));
 
   return (
     <section
@@ -35,6 +31,20 @@ export default function Projects() {
         </div>
       </div>
       <span className="html-tag">{'<section>'}</span>
+      <Suspense fallback={<Loading />}>
+        <FeaturedProjects />
+      </Suspense>
+      <div className="projects-notheworthy-heading">
+        <span data-aos="fade-right" data-aos-once className="html-tag">
+          {'<h3>'}
+        </span>
+        <h3 data-aos="flip-up" data-aos-once>
+          Other Noteworthy Projects
+        </h3>
+        <span data-aos="fade-left" data-aos-once className="html-tag">
+          {'</h3>'}
+        </span>
+      </div>
       <div className="projects-container">
         <Suspense fallback={<Loading />}>
           <ProjectCard />

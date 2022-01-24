@@ -15,3 +15,4 @@ export { default as ProjectCard } from './ProjectCard';
 export { default as Projects } from './Projects';
 export { default as ScrollIndicator } from './ScrollIndicator';
 export { default as SocialsFixed } from './SocialsFixed';
+export { default as FeaturedProjects } from './FeaturedProjects';
