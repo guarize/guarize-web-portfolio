@@ -248,7 +248,6 @@
   .bganimation {
     flex: 1;
     position: absolute;
-    margin-top: 180px;
     width: 300px;
   }
 }
