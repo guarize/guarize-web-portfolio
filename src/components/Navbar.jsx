@@ -5,6 +5,7 @@ import { Link } from 'react-scroll';
 import { VscTools } from 'react-icons/vsc';
 import { FaLaptopCode } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
+import { RiMenu3Line } from 'react-icons/ri';
 import burgerStyles from '../services/BurgerStyles';
 
 export default function Navbar() {
@@ -55,6 +56,7 @@ export default function Navbar() {
       onClose={() => setMenuOpen(false)}
       right
       styles={burgerStyles}
+      customBurgerIcon={<RiMenu3Line />}
       disableAutoFocus
     >
       {navItems()}
