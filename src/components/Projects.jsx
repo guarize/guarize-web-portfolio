@@ -1,10 +1,18 @@
-import React, { useContext, lazy, Suspense } from 'react';
+import React, {
+  useContext, lazy, Suspense, useEffect,
+} from 'react';
+import Aos from 'aos';
 import PortfolioContext from '../context/PortfolioContext';
 import { Loading } from '.';
 import portfolio from '../services/ProjectsData';
 import '../styles/Projects.css';
+import 'aos/dist/aos.css';
 
 export default function Projects() {
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
+
   const {
     darkMode,
     seeMoreProjects: { seeMore },

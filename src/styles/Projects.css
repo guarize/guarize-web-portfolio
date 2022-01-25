@@ -233,7 +233,6 @@
 }
 
 @media only screen and (max-width: 481px) {
-
   .projects-title {
     font-size: 1.9rem;
   }
@@ -253,7 +252,7 @@
   .projects-notheworthy-heading {
     margin: 1.5rem 1rem 3rem 1rem;
   }
-  
+
   .projects-notheworthy-heading h3 {
     text-align: center;
     font-size: 28px;
