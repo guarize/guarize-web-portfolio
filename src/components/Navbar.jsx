@@ -24,7 +24,7 @@ export default function Navbar() {
           onClick={() => setMenuOpen(false)}
         >
           {isScreenMedium && <VscTools />}
-          <span>Skills</span>
+          <span>Toolbox</span>
         </Link>
         <Link
           to="projects"
@@ -34,7 +34,7 @@ export default function Navbar() {
           onClick={() => setMenuOpen(false)}
         >
           {isScreenMedium && <FaLaptopCode />}
-          <span>Projects</span>
+          <span>Portfolio</span>
         </Link>
         <Link
           to="footer"
@@ -43,7 +43,7 @@ export default function Navbar() {
           onClick={() => setMenuOpen(false)}
         >
           {isScreenMedium && <AiOutlineMail />}
-          <span>Contacts</span>
+          <span>Contact</span>
         </Link>
       </section>
     </section>
