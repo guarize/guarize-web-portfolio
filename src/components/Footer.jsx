@@ -36,6 +36,7 @@ export default function Footer() {
               href="https://github.com/guarize"
               target="_blank"
               rel="noreferrer"
+              aria-label="Github"
             >
               <VscGithubAlt />
             </a>
@@ -43,6 +44,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/pedroguarize/"
               target="_blank"
               rel="noreferrer"
+              aria-label="LinkedIn"
             >
               <FiLinkedin />
             </a>
@@ -50,7 +52,9 @@ export default function Footer() {
         )}
       </div>
       <span className="html-tag">{'</footer>'}</span>
-      <p className="footer-copyright">© 2022 Pedro Guarize. All rights reserved.</p>
+      <p className="footer-copyright">
+        © 2022 Pedro Guarize. All rights reserved.
+      </p>
     </footer>
   );
 }
