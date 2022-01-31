@@ -27,6 +27,7 @@ function FeaturedProjects() {
                 className="medium-featured-project"
                 data-aos="flip-down"
                 data-aos-once
+                key={name}
               >
                 <div style={{ position: 'relative' }}>
                   <img src={image} alt="project preview" />

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Aos from 'aos';
 import {
   MyToolbox,
@@ -11,12 +11,21 @@ import {
 import PortfolioProvider from './provider/PortfolioProvider';
 import './styles/App.css';
 import 'aos/dist/aos.css';
+import InitialLoadingScreen from './components/InitialLoadingScreen';
 
 export default function App() {
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     Aos.init({ duration: 800 });
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
   }, []);
-  return (
+  return loading ? (
+    <InitialLoadingScreen />
+  ) : (
     <PortfolioProvider>
       <SocialsFixed />
       <EmailFixed />
