@@ -87,8 +87,8 @@ const portfolio = [
     description: `This was the second React project developed during Trybe's Front-End module. 
     A digital version of Top Trumps written in react, in which you are able to create and save custom cards.`,
     tools: ['React', 'CSS'],
-    liveProject: 'https://guarize-music-app.vercel.app/',
-    githubCode: 'https://github.com/guarize/music-app-react',
+    liveProject: 'https://top-trumps-react.vercel.app/',
+    githubCode: 'https://github.com/guarize/top-trumps-react',
   },
 ];
 
